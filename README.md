@@ -1,2 +1,2 @@
 # DisplayFusion
-My DisplayFusion scripts
+My personal respository of DisplayFusion scripts
