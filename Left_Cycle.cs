@@ -19,6 +19,8 @@ public static class DisplayFusionFunction
     //get the bounds of the current monitor
     Rectangle monitorBounds = BFS.Monitor.GetMonitorWorkAreaByWindow(windowHandle);
 
+    // Rectangle monitorRect = BFS.Monitor.GetMonitorBoundsByWindow(windowHandle);
+
     if (windowBounds.X != monitorBounds.X)
     {
       BFS.Window.MoveToLeftMonitorHalf(windowHandle);

@@ -17,6 +17,15 @@ public static class DisplayFusionFunction
     Rectangle monitorBounds = BFS.Monitor.GetMonitorWorkAreaByWindow(windowHandle);
     Rectangle monitorRect   = BFS.Monitor.GetMonitorBoundsByWindow(windowHandle);
 
+    /*if (IsWithin(windowBounds.Width, (int)(monitorBounds.Width * 0.30f), 10)) {
+            BFS.Window.Maximize(windowHandle);
+    }
+    else if(IsWithin(windowBounds.Width, monitorBounds.Width, 10) && !BFS.Window.IsMaximized(windowHandle))
+      BFS.Window.SetSizeAndLocation(windowHandle, monitorBounds.Left + (int)(monitorBounds.Width * 0.35), monitorBounds.Top, (int)(monitorBounds.Width * 0.30), monitorBounds.Height);
+    else {
+            BFS.Window.SetSizeAndLocation(windowHandle, monitorBounds.Left, monitorBounds.Top, monitorBounds.Width, monitorBounds.Height);
+    }*/
+
     if (IsWithin(windowBounds.Width, monitorBounds.Width, 10) && !BFS.Window.IsMaximized(windowHandle)) {
       BFS.Window.Maximize(windowHandle);
       return;

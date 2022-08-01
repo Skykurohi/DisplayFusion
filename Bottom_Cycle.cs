@@ -21,7 +21,7 @@ public static class DisplayFusionFunction
 
     // Rectangle monitorRect = BFS.Monitor.GetMonitorBoundsByWindow(windowHandle);
 
-    if (windowBounds.Y + windowBounds.Height != monitorBounds.Y + monitorBounds.Height)
+    if (windowBounds.Y + windowBounds.Height != monitorBounds.Height)
     {
       BFS.Window.MoveToBottomMonitorHalf(windowHandle);
       return;
